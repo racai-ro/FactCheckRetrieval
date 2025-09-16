@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fact_retrieval"
+version = "0.1.0"
+description = "This package contains the code for RACAI submission to the SemEval-2025 Task 7: Multilingual and Crosslingual Fact-Checked Claim Retrieval."
+authors = [
+    {name = "Radu Chivereanu", email = "rchivereanu@gmail.com"}
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "wandb==0.19.9",
+    "sentence-transformers==4.1.0",
+    "datasets==3.5.0",
+    "peft==0.10.0",
+    "transformers==4.51.3",
+]
+
+[project.optional-dependencies]
+cuda = [
+    "bitsandbytes==0.45.5; platform_system == 'Linux'",
+    "triton==3.3.0; platform_system == 'Linux'",
+    "flash-attn; platform_system == 'Linux'"
+]
+
+[project.urls]
+Homepage = "https://github.com/racai-ro/FactCheckRetrieval"
+Repository = "https://github.com/racai-ro/FactCheckRetrieval"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
