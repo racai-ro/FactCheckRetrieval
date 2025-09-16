@@ -19,9 +19,66 @@ Our approach achieved competitive results in SemEval-2025 Task 7:
 - Implementation of cost-effective fine-tuning techniques (LoRA, QLoRA, Prompt Tuning)
 - Matryoshka embeddings for reduced memory footprint
 
-## Code Availability
+## Installation
 
-!!!!**Code will be added soon.**
+Install the package and its dependencies:
+
+```bash
+uv pip install .
+```
+
+For CUDA-enabled systems (Linux), the GPU-accelerated dependencies (bitsandbytes, triton, flash-attn) will be automatically installed.
+
+## Usage
+
+### Training
+
+Train the model using distributed training with 3 GPUs:
+
+```bash
+python -m torch.distributed.run --nproc_per_node=3 src/train.py
+```
+
+You can customize training parameters:
+
+```bash
+python -m torch.distributed.run --nproc_per_node=3 src/train.py \
+    --model_id BAAI/bge-multilingual-gemma2 \
+    --method lora \
+    --epochs 20 \
+    --batch_size 1024 \
+    --learning_rate 2e-4 \
+    --output_dir multilingual-fact-retrieval-gemma-tuned
+```
+
+### Inference
+
+Run inference with a custom query:
+
+```bash
+python src/inference.py --query "COVID-19 vaccines are safe and effective" --top_k 5
+```
+
+With a trained adapter model:
+
+```bash
+python src/inference.py \
+    --query "Climate change is caused by human activities" \
+    --adapter_model multilingual-fact-retrieval/checkpoint-40 \
+    --top_k 3 \
+    --output_format json \
+    --output_file results.json
+```
+
+For GPU inference:
+
+```bash
+python src/inference.py \
+    --query "Electric vehicles are better for the environment" \
+    --device cuda \
+    --embedding_method prompt \
+    --verbose
+```
 
 ## Citation
 
