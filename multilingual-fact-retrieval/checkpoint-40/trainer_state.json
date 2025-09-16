@@ -1,0 +1,234 @@
+{
+  "best_metric": 0.9523427640798445,
+  "best_model_checkpoint": "multilingual-fact-retrieval-gemma/checkpoint-40",
+  "epoch": 5.0,
+  "eval_steps": 500,
+  "global_step": 40,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.375,
+      "grad_norm": 5.8125,
+      "learning_rate": 3.7500000000000003e-05,
+      "loss": 1.4351,
+      "step": 3
+    },
+    {
+      "epoch": 0.75,
+      "grad_norm": 0.87109375,
+      "learning_rate": 7.500000000000001e-05,
+      "loss": 0.6192,
+      "step": 6
+    },
+    {
+      "epoch": 1.0,
+      "eval_gemma_cosine_accuracy@1": 0.8636363636363636,
+      "eval_gemma_cosine_accuracy@10": 0.9636363636363636,
+      "eval_gemma_cosine_accuracy@3": 0.9363636363636364,
+      "eval_gemma_cosine_accuracy@5": 0.9545454545454546,
+      "eval_gemma_cosine_map@100": 0.8970843144782025,
+      "eval_gemma_cosine_mrr@10": 0.9027777777777778,
+      "eval_gemma_cosine_ndcg@10": 0.9128995926245905,
+      "eval_gemma_cosine_precision@1": 0.8636363636363636,
+      "eval_gemma_cosine_precision@10": 0.10954545454545456,
+      "eval_gemma_cosine_precision@3": 0.35,
+      "eval_gemma_cosine_precision@5": 0.21636363636363637,
+      "eval_gemma_cosine_recall@1": 0.8090909090909091,
+      "eval_gemma_cosine_recall@10": 0.9568181818181818,
+      "eval_gemma_cosine_recall@3": 0.9261363636363636,
+      "eval_gemma_cosine_recall@5": 0.946590909090909,
+      "eval_runtime": 60.033,
+      "eval_samples_per_second": 0.0,
+      "eval_steps_per_second": 0.0,
+      "step": 8
+    },
+    {
+      "epoch": 1.125,
+      "grad_norm": 0.60546875,
+      "learning_rate": 0.00011250000000000001,
+      "loss": 0.342,
+      "step": 9
+    },
+    {
+      "epoch": 1.5,
+      "grad_norm": 0.408203125,
+      "learning_rate": 0.00015000000000000001,
+      "loss": 0.2698,
+      "step": 12
+    },
+    {
+      "epoch": 1.875,
+      "grad_norm": 0.361328125,
+      "learning_rate": 0.0001875,
+      "loss": 0.2292,
+      "step": 15
+    },
+    {
+      "epoch": 2.0,
+      "eval_gemma_cosine_accuracy@1": 0.8772727272727273,
+      "eval_gemma_cosine_accuracy@10": 0.9772727272727273,
+      "eval_gemma_cosine_accuracy@3": 0.9681818181818181,
+      "eval_gemma_cosine_accuracy@5": 0.9772727272727273,
+      "eval_gemma_cosine_map@100": 0.9176962029041197,
+      "eval_gemma_cosine_mrr@10": 0.9217424242424243,
+      "eval_gemma_cosine_ndcg@10": 0.9328231215492151,
+      "eval_gemma_cosine_precision@1": 0.8772727272727273,
+      "eval_gemma_cosine_precision@10": 0.11136363636363636,
+      "eval_gemma_cosine_precision@3": 0.36060606060606065,
+      "eval_gemma_cosine_precision@5": 0.22090909090909094,
+      "eval_gemma_cosine_recall@1": 0.8238636363636364,
+      "eval_gemma_cosine_recall@10": 0.9727272727272728,
+      "eval_gemma_cosine_recall@3": 0.9579545454545455,
+      "eval_gemma_cosine_recall@5": 0.9693181818181819,
+      "eval_runtime": 59.3857,
+      "eval_samples_per_second": 0.0,
+      "eval_steps_per_second": 0.0,
+      "step": 16
+    },
+    {
+      "epoch": 2.25,
+      "grad_norm": 0.26953125,
+      "learning_rate": 0.0001999048221581858,
+      "loss": 0.1619,
+      "step": 18
+    },
+    {
+      "epoch": 2.625,
+      "grad_norm": 0.267578125,
+      "learning_rate": 0.00019940563382223197,
+      "loss": 0.1211,
+      "step": 21
+    },
+    {
+      "epoch": 3.0,
+      "grad_norm": 0.271484375,
+      "learning_rate": 0.00019848077530122083,
+      "loss": 0.1057,
+      "step": 24
+    },
+    {
+      "epoch": 3.0,
+      "eval_gemma_cosine_accuracy@1": 0.8727272727272727,
+      "eval_gemma_cosine_accuracy@10": 0.9681818181818181,
+      "eval_gemma_cosine_accuracy@3": 0.9590909090909091,
+      "eval_gemma_cosine_accuracy@5": 0.9636363636363636,
+      "eval_gemma_cosine_map@100": 0.9146024328754663,
+      "eval_gemma_cosine_mrr@10": 0.9161796536796536,
+      "eval_gemma_cosine_ndcg@10": 0.927664986996187,
+      "eval_gemma_cosine_precision@1": 0.8727272727272727,
+      "eval_gemma_cosine_precision@10": 0.11090909090909092,
+      "eval_gemma_cosine_precision@3": 0.35909090909090907,
+      "eval_gemma_cosine_precision@5": 0.22000000000000003,
+      "eval_gemma_cosine_recall@1": 0.8159090909090909,
+      "eval_gemma_cosine_recall@10": 0.9659090909090909,
+      "eval_gemma_cosine_recall@3": 0.9511363636363637,
+      "eval_gemma_cosine_recall@5": 0.9602272727272727,
+      "eval_runtime": 59.39,
+      "eval_samples_per_second": 0.0,
+      "eval_steps_per_second": 0.0,
+      "step": 24
+    },
+    {
+      "epoch": 3.375,
+      "grad_norm": 0.1904296875,
+      "learning_rate": 0.00019713420698132614,
+      "loss": 0.0692,
+      "step": 27
+    },
+    {
+      "epoch": 3.75,
+      "grad_norm": 0.2001953125,
+      "learning_rate": 0.0001953716950748227,
+      "loss": 0.0587,
+      "step": 30
+    },
+    {
+      "epoch": 4.0,
+      "eval_gemma_cosine_accuracy@1": 0.9090909090909091,
+      "eval_gemma_cosine_accuracy@10": 0.9818181818181818,
+      "eval_gemma_cosine_accuracy@3": 0.9727272727272728,
+      "eval_gemma_cosine_accuracy@5": 0.9727272727272728,
+      "eval_gemma_cosine_map@100": 0.9395122166870064,
+      "eval_gemma_cosine_mrr@10": 0.9398538961038962,
+      "eval_gemma_cosine_ndcg@10": 0.9503504907141942,
+      "eval_gemma_cosine_precision@1": 0.9090909090909091,
+      "eval_gemma_cosine_precision@10": 0.11272727272727275,
+      "eval_gemma_cosine_precision@3": 0.36515151515151517,
+      "eval_gemma_cosine_precision@5": 0.22272727272727275,
+      "eval_gemma_cosine_recall@1": 0.8534090909090909,
+      "eval_gemma_cosine_recall@10": 0.9818181818181818,
+      "eval_gemma_cosine_recall@3": 0.9647727272727272,
+      "eval_gemma_cosine_recall@5": 0.9715909090909091,
+      "eval_runtime": 59.2459,
+      "eval_samples_per_second": 0.0,
+      "eval_steps_per_second": 0.0,
+      "step": 32
+    },
+    {
+      "epoch": 4.125,
+      "grad_norm": 0.1416015625,
+      "learning_rate": 0.00019320078692827987,
+      "loss": 0.062,
+      "step": 33
+    },
+    {
+      "epoch": 4.5,
+      "grad_norm": 0.1630859375,
+      "learning_rate": 0.000190630778703665,
+      "loss": 0.0529,
+      "step": 36
+    },
+    {
+      "epoch": 4.875,
+      "grad_norm": 0.1611328125,
+      "learning_rate": 0.0001876726755707508,
+      "loss": 0.0459,
+      "step": 39
+    },
+    {
+      "epoch": 5.0,
+      "eval_gemma_cosine_accuracy@1": 0.9227272727272727,
+      "eval_gemma_cosine_accuracy@10": 0.9818181818181818,
+      "eval_gemma_cosine_accuracy@3": 0.9590909090909091,
+      "eval_gemma_cosine_accuracy@5": 0.9681818181818181,
+      "eval_gemma_cosine_map@100": 0.9429893785631489,
+      "eval_gemma_cosine_mrr@10": 0.9434199134199135,
+      "eval_gemma_cosine_ndcg@10": 0.9523427640798445,
+      "eval_gemma_cosine_precision@1": 0.9227272727272727,
+      "eval_gemma_cosine_precision@10": 0.11272727272727275,
+      "eval_gemma_cosine_precision@3": 0.36212121212121207,
+      "eval_gemma_cosine_precision@5": 0.22181818181818183,
+      "eval_gemma_cosine_recall@1": 0.8636363636363636,
+      "eval_gemma_cosine_recall@10": 0.9818181818181818,
+      "eval_gemma_cosine_recall@3": 0.9534090909090909,
+      "eval_gemma_cosine_recall@5": 0.9670454545454545,
+      "eval_runtime": 59.3722,
+      "eval_samples_per_second": 0.0,
+      "eval_steps_per_second": 0.0,
+      "step": 40
+    }
+  ],
+  "logging_steps": 3,
+  "max_steps": 160,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 20,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 0.0,
+  "train_batch_size": 1024,
+  "trial_name": null,
+  "trial_params": null
+}
